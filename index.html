@@ -20,6 +20,10 @@
       src="https://kit.fontawesome.com/88918fa279.js"
       crossorigin="anonymous"
     ></script>
+    <!---------------
+        Css style link
+    ----------->
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!---------
@@ -38,47 +42,156 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded="true"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse d-flex justify-content-around"
-            id="navbarSupportedContent"
-          >
-            <div>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Deals</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Achivement</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Register</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <button class="btn btn-outline-danger me-2">Sign In</button>
-              <button class="btn btn-outline-info">Sign Up</button>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Achivement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline-danger me-2">Sign In</button>
+            <button class="btn btn-outline-info">Sign Up</button>
           </div>
         </div>
       </nav>
       <!-- navigation-end  -->
+
+      <!-- slide show start  -->
+      <section>
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active d-none"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              class="d-none"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              class="d-none"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active slider_body mb-5"
+              data-bs-interval="10000"
+            >
+              <img
+                src="images/posters/poster-1.jpg"
+                class="d-block w-100"
+                alt="poster one"
+              />
+              <div class="carousel-caption mb-5">
+                <h1 class="fs-1 fw-bold title_name">
+                  <span>Full Web devolopment Cource</span><br />
+                  <span>in 3 month</span>
+                </h1>
+                <p class="text_more">
+                  We are support you always and we offer you the most effective
+                  cource here! If you want to learn Programming Languages,we
+                  will help to understand that. we are here for you.
+                </p>
+                <button class="btn btn-primary px-5">Get Offer</button>
+              </div>
+            </div>
+            <div class="carousel-item slider_body" data-bs-interval="2000">
+              <img
+                src="images/posters/poster-2.jpg"
+                class="d-block w-100"
+                alt="poster two"
+              />
+              <div class="carousel-caption mb-5">
+                <h1 class="fs-1 fw-bold title_name">
+                  <span>Full JavaScript Cource</span><br />
+                  <span>in 3 month</span>
+                </h1>
+                <p class="text-light">
+                  We are support you always and we offer you the most effective
+                  cource here! If you want to learn JavaScript Programming
+                  Languages,we will help to understand that. we are here for
+                  you.
+                </p>
+                <button class="btn btn-primary px-5 fs-1">Get Offer</button>
+              </div>
+            </div>
+            <div class="carousel-item slider_body">
+              <img
+                src="images/posters/poster-3.jpg"
+                class="d-block w-100"
+                alt="poster three"
+              />
+              <div class="carousel-caption mb-5">
+                <h1 class="fs-1 fw-bold title_name">
+                  <span>Full Java devolopment Cource</span><br />
+                  <span>in 3 month</span>
+                </h1>
+                <p class="text-light">
+                  We are support you always and we offer you the most effective
+                  cource here! If you want to learn Java Programming
+                  Languages,we will help to understand that. we are here for
+                  you.
+                </p>
+                <button class="btn btn-primary px-5 fs-3">Get Offer</button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- slide show end  -->
     </header>
     <!---------
      top head-end  
@@ -86,6 +199,14 @@
     <!-------------
          bootstrap js link 
     --------->
+    <!-- <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+     <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-google-play"></i>
+    <i class="fa-brands fa-apple-pay"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-solid fa-arrow-right"></i>
+ -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
