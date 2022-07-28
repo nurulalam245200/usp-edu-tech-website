@@ -3,15 +3,6 @@
 body {
   font-family: roboto;
 }
-
-.slider_body::before {
-  background: black;
-  opacity: 0.7;
-}
-.title_name {
-  color: #ff6263;
-  font-family: bebas neue;
-}
 .banner_btn {
   padding: 15px 40px;
   background-color: rgb(9, 160, 219);
@@ -19,6 +10,30 @@ body {
   font-size: 18px;
   font-weight: 700;
 }
+/* social media icon  */
+.fa-brands {
+  font-size: 20px;
+  padding: 10px;
+}
+.fa-facebook {
+  color: #1d7bc9;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-linkedin {
+  color: #1d7bc9;
+}
+.fa-brands .fa-google-play {
+  color: aqua;
+}
+.fa-apple-pay {
+  color: white;
+}
+.fa-github {
+  color: darkslategray;
+}
+/* slider-banner responsive for small device*/
 @media only screen and (max-width: 668px) {
   .banner_title {
     bottom: 0;
